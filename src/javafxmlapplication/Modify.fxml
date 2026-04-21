@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane hgap="6.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" styleClass="gradientback2" stylesheets="@ExpensesCSS.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.ModifyController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.199951171875" minWidth="10.0" prefWidth="122.4" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="516.5999755859375" minWidth="10.0" prefWidth="274.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="451.39996337890625" minWidth="10.0" prefWidth="87.5" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="451.39996337890625" minWidth="10.0" prefWidth="30.399987792968773" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="451.39996337890625" minWidth="10.0" prefWidth="91.20001220703125" />
+      <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="68.0" prefWidth="596.0" GridPane.columnIndex="1">
+         <children>
+            <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="MODIFY" textAlignment="CENTER">
+               <font>
+                  <Font name="Noto Sans Kannada ExtraBold" size="33.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="68.0" prefWidth="246.0" GridPane.rowIndex="1">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="Name_I" focusTraversable="false" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="196.21630859375">
+               <font>
+                  <Font size="11.0" />
+               </font></Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <children>
+            <Text fx:id="mailError" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="196.21630859375">
+               <font>
+                  <Font size="11.0" />
+               </font></Text>
+            <Button fx:id="uploadbutton" mnemonicParsing="false" onMouseClicked="#uploadAction" prefHeight="51.0" prefWidth="42.0" styleClass="descarga" stylesheets="@loginui.css">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="5" />
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Text fx:id="nickError" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="255.21630859375">
+               <font>
+                  <Font size="11.0" />
+               </font></Text>
+            <TextField fx:id="Password_i" focusTraversable="false" prefHeight="0.0" style="-fx-background-color: transparent; -fx-border-color: #000000#000000; -fx-border-width: 0px 0px 2px 0px;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <TextField fx:id="surname" focusTraversable="false" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Surname">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginBtn" text="Email">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="4.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Text fx:id="pwdError" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="249.21630859375">
+               <font>
+                  <Font size="11.0" />
+               </font></Text>
+            <TextField fx:id="email" focusTraversable="false" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#volver" onMouseClicked="#volver" prefHeight="41.0" prefWidth="82.0" style="-fx-background-color: transparent; -fx-border-width: 2px; -fx-border-color: #000000;" styleClass="loginBtn" stylesheets="@loginui.css" text="Back">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.2042755344418052">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Balance_logo_black%252B_neon.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <ImageView fx:id="uploadimg" fitHeight="138.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true" styleClass="circle">
+               <image>
+                  <Image url="@../Resources/OIP.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#Save" prefHeight="46.0" prefWidth="76.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2px;" styleClass="loginBtn" stylesheets="@loginui.css" text="Save">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.2042755344418052">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <ImageView fx:id="DeletePhoto" fitHeight="34.0" fitWidth="35.0" onMouseClicked="#DeleteAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+         <image>
+            <Image url="@../Resources/close_24dp_FILL0_wght400_GRAD0_opsz24.png" />
+         </image>
+         <GridPane.margin>
+            <Insets left="25.0" top="25.0" />
+         </GridPane.margin>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="94.0" prefWidth="126.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="44.0" onMouseClicked="#uploadAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/iconic.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="60.0" right="50.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </VBox>
+   </children>
+</GridPane>

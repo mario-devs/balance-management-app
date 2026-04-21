@@ -1,0 +1,50 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 abr 2024, 17:09:24
+    Author     : saul
+*/
+
+.parent{
+    -fx-background-color: white;
+}
+.sidebar{
+    -fx-background-color: #6747CD;
+}
+.forgetBtn{
+    -fx-text-fill: #0D9AE6
+}
+.forgetBtn:hover{
+    -fx-text-fill: #0D9AE6;
+    -fx-underline: true;
+}
+.loginBtn{
+  
+
+    -fx-background-radius: 15px;
+    
+}
+.loginBtn:hover{
+    -fx-background-color: transparent;
+     -fx-background-radius: 15px;
+    -fx-text-fill: #006400;
+    -fx-border-color: #c8ff48;
+    -fx-border-vidth: lpx;
+    -fx-border-style: solid;
+     -fx-border-radius: 15px;
+}
+.closeBtn{
+    -fx-background-color: transparent;
+    -fx-text-fill: #696969  ;
+    -fx-border-color: #696969;
+    -fx-border-vidth: lpx;
+    -fx-border-style: solid;
+
+    
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.LoginUIController">
+   <center>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="gradientback" stylesheets="@ExpensesCSS.css" BorderPane.alignment="CENTER">
+         <children>
+            <Line blendMode="SRC_ATOP" endX="-26.15433120727539" startX="579.3456420898438" startY="-16.154327392578125" stroke="#c8ff48" strokeMiterLimit="0.0" strokeWidth="26.0" />
+            <TextField fx:id="textUser" focusTraversable="false" layoutX="121.0" layoutY="71.0" onKeyPressed="#tabBetweenFields" prefHeight="31.0" prefWidth="400.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #c8ff48; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <Glow level="0.41" />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="textPassword" focusTraversable="false" layoutX="121.0" layoutY="152.0" onKeyPressed="#SpaceLogin" prefHeight="31.0" prefWidth="400.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #c8ff48; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <Glow level="0.41" />
+               </effect></PasswordField>
+            <Button focusTraversable="false" layoutX="262.0" layoutY="243.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="40.0" prefWidth="76.0" style="-fx-background-color: transparent; -fx-border-width: 2; -fx-border-color: #000000;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Log In">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="18.73" elevation="40.84" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font></Button>
+            <Hyperlink focusTraversable="false" layoutX="365.0" layoutY="207.0" onMouseClicked="#registerclick" text="here" />
+            <Text layoutX="191.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account? Register" />
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="80.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/imageedit_3_4139604171.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="45.0" layoutX="69.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/paswwbackk.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="96.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" stylesheets="@ExpensesCSS.css" BorderPane.alignment="CENTER">
+         <children>
+            <Line blendMode="SRC_ATOP" endX="-8.039108276367188" endY="89.84567260742188" startX="32.730445861816406" startY="-9.769550323486328" stroke="#c8ff48" strokeMiterLimit="0.0" strokeWidth="26.0" />
+            <ImageView fitHeight="80.0" fitWidth="147.0" layoutX="227.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-24.80750274658203" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="226.0" AnchorPane.topAnchor="18.0">
+               <image>
+                  <Image url="@../Resources/Balance_logo_black%252B_neon.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

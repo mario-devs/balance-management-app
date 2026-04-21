@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.Cuenta_GastosController">
+   <center>
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #c8ff48;" styleClass="table" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="NameCol" prefWidth="91.0" text="Name" />
+            <TableColumn fx:id="CostCol" prefWidth="72.0" text="Cost" />
+            <TableColumn fx:id="DateCol" prefWidth="124.0" text="Date" />
+            <TableColumn fx:id="DescriptionCol" prefWidth="175.0" text="Description" />
+            <TableColumn fx:id="CategoryCol" prefWidth="130.0" text="Category" />
+            <TableColumn fx:id="UnitsCol" prefWidth="65.0" text="Units" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="10.0" prefWidth="5.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="10.0" prefWidth="30.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <MenuBar prefHeight="42.0" prefWidth="868.0" styleClass="tool-bar" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1">
+              <menus>
+                <Menu mnemonicParsing="false" text="User">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#Modify" style="-fx-text-fill: #000000;" text="Modify" />
+                        <MenuItem mnemonicParsing="false" onAction="#logOut" style="-fx-text-fill: #000000;" text="LogOut" />
+                  </items>
+                </Menu>
+              </menus>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </MenuBar>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="exp2background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutX="694.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#showBarChart" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="See monthly report" />
+                  <ImageView fitHeight="93.0" fitWidth="115.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/Balance_logo_black%252B_neon.jpg" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" />
+         </children>
+      </GridPane>
+   </top>
+   <left>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="10.0" prefWidth="5.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" />
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" />
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" />
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" />
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" />
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="gradientback" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" />
+         </children>
+      </GridPane>
+   </left>
+   <bottom>
+      <GridPane styleClass="exp1background" stylesheets="@ExpensesCSS.css" BorderPane.alignment="BOTTOM_CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="10.0" prefWidth="5.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane layoutX="11.0" layoutY="11.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Pane layoutX="11.0" layoutY="11.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Pane layoutX="11.0" layoutY="11.0" prefHeight="200.0" prefWidth="200.0" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="2" />
+            <Pane layoutX="454.0" layoutY="11.0" prefHeight="200.0" prefWidth="200.0" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" />
+            <Pane layoutX="40.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Pane layoutX="40.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="3" />
+            <Pane layoutX="40.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.rowIndex="1" />
+            <Pane layoutX="10.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" />
+         </children>
+      </GridPane>
+   </bottom>
+   <right>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="5.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #c8ff48;" stylesheets="@ExpensesCSS.css">
+               <children>
+                  <Button fx:id="addEButton" layoutX="30.0" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#addGasto" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Add Charge" />
+                  <Button fx:id="btnEliminar" layoutX="21.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#removeG" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Delete Charge" />
+                  <Button fx:id="addCategoryButton" layoutX="24.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#ADD_Category" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Add Category" />
+                  <Text layoutX="53.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOOLS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="21.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/tools.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <styleClass>
+                  <String fx:value="table" />
+                  <String fx:value="gradientback2" />
+               </styleClass>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="gradientback" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="exp1background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+   </right>
+</BorderPane>
