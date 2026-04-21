@@ -50,7 +50,7 @@ public class LoginUIController implements Initializable {
     }    
      // Quitar el MouseEvent y ponerlo ActionEvent
     @FXML
-    private void registerclick(MouseEvent event) throws IOException {
+    private void registerclick(ActionEvent event) throws IOException {
         Stage stageActual = (Stage) ((Node)event.getSource()).getScene().getWindow();
         stageActual.close();
         Parent LoginP=  FXMLLoader.load(getClass().getResource("RegisterUI.fxml"));

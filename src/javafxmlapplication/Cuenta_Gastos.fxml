@@ -58,7 +58,7 @@
             </MenuBar>
             <Pane prefHeight="200.0" prefWidth="200.0" styleClass="exp2background" stylesheets="@ExpensesCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <Button layoutX="694.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#showBarChart" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="See monthly report" />
+                  <Button layoutX="694.0" layoutY="15.0" mnemonicParsing="false" onAction="#showBarChart" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="See monthly report" />
                   <ImageView fitHeight="93.0" fitWidth="115.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Resources/Balance_logo_black%252B_neon.jpg" />
@@ -129,9 +129,9 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #c8ff48;" stylesheets="@ExpensesCSS.css">
                <children>
-                  <Button fx:id="addEButton" layoutX="30.0" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#addGasto" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Add Charge" />
-                  <Button fx:id="btnEliminar" layoutX="21.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#removeG" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Delete Charge" />
-                  <Button fx:id="addCategoryButton" layoutX="24.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#ADD_Category" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Add Category" />
+                  <Button fx:id="addEButton" layoutX="30.0" layoutY="65.0" mnemonicParsing="false" onAction="#addGasto" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Add Charge" />
+                  <Button fx:id="btnEliminar" layoutX="21.0" layoutY="125.0" mnemonicParsing="false" onAction="#removeG" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Delete Charge" />
+                  <Button fx:id="addCategoryButton" layoutX="24.0" layoutY="366.0" mnemonicParsing="false" onAction="#ADD_Category" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2;" styleClass="loginBtn" stylesheets="@newCascadeStyleSheet.css" text="Add Category" />
                   <Text layoutX="53.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOOLS">
                      <font>
                         <Font name="System Bold" size="16.0" />

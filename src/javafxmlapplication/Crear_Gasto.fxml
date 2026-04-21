@@ -106,7 +106,7 @@
                <children>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="BackLobby" layoutX="34.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#BtnBack" prefHeight="41.0" prefWidth="86.0" style="-fx-border-color: #000000; -fx-background-color: transparent; -fx-border-width: 2px;" styleClass="loginBtn" stylesheets="@loginui.css" text="Back">
+                        <Button fx:id="BackLobby" layoutX="34.0" layoutY="2.0" mnemonicParsing="false" onAction="#BtnBack" prefHeight="41.0" prefWidth="86.0" style="-fx-border-color: #000000; -fx-background-color: transparent; -fx-border-width: 2px;" styleClass="loginBtn" stylesheets="@loginui.css" text="Back">
                            <font>
                               <Font name="System Italic" size="17.0" />
                            </font></Button>

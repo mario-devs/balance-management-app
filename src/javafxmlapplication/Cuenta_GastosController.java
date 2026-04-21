@@ -125,7 +125,7 @@ public class Cuenta_GastosController implements Initializable {
     }
 
     @FXML
-    private void addGasto(MouseEvent event) throws IOException {
+    private void addGasto(ActionEvent event) throws IOException {
         Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stageActual.close();
         
@@ -148,7 +148,7 @@ public class Cuenta_GastosController implements Initializable {
     }
     
     @FXML
-    private void showBarChart(MouseEvent event) {
+    private void showBarChart(ActionEvent event) {
         try {
             Parent LoginP= FXMLLoader.load(getClass().getResource("Graphics.fxml"));
         Scene LoginScene = new Scene(LoginP);
@@ -177,7 +177,7 @@ public class Cuenta_GastosController implements Initializable {
     }
     
     @FXML
-    private void removeG(MouseEvent event) throws AcountDAOException,IOException{
+    private void removeG(ActionEvent event) throws AcountDAOException,IOException{
         Charge selectedPerson = table.getSelectionModel().getSelectedItem();
         if (selectedPerson != null) {
              Alert alert = new Alert(Alert.AlertType.WARNING);
@@ -190,7 +190,7 @@ public class Cuenta_GastosController implements Initializable {
         }
     }
     @FXML
-    private void ADD_Category(MouseEvent event) throws IOException {
+    private void ADD_Category(ActionEvent event) throws IOException {
         Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stageActual.close();
         Parent LoginP= FXMLLoader.load(getClass().getResource("Add_Category.fxml"));

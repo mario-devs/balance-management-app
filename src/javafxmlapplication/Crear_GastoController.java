@@ -76,7 +76,6 @@ public class Crear_GastoController implements Initializable {
     private Image selectedImage;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
         try {
             account2 = Acount.getInstance();
             List<Category> categoriasUsuario = account2.getUserCategories();
@@ -98,7 +97,7 @@ public class Crear_GastoController implements Initializable {
     }
 
     @FXML
-    private void BtnBack(MouseEvent event) throws IOException {
+    private void BtnBack(ActionEvent event) throws IOException {
         Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stageActual.close();
         Parent LoginP = FXMLLoader.load(getClass().getResource("Cuenta_Gastos.fxml"));
@@ -199,7 +198,7 @@ public class Crear_GastoController implements Initializable {
         descriptionG.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if (!newValue.matches("[a-zA-Z]*")) {
+                if (!newValue.matches("[a-zA-Z\\s\\p{Punct}]*")) {
                     descriptionG.setText(oldValue);
                 }
             }
@@ -209,7 +208,7 @@ public class Crear_GastoController implements Initializable {
         nameG.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if (!newValue.matches("[a-zA-Z]*")) {
+                if (!newValue.matches("[a-zA-Z\\s\\p{Punct}]*")) {
                     nameG.setText(oldValue);
                 }
             }
@@ -220,7 +219,7 @@ public class Crear_GastoController implements Initializable {
     private void deleteAction(MouseEvent event) {
         // Eliminar la imagen del ImageView
         
-        Image image = new Image(getClass().getResourceAsStream("../Resources/OIP.png"));
+        Image image = new Image(getClass().getResourceAsStream("/Resources/OIP.png"));
         uploadimg.setImage(image);
         deletePhoto.setVisible(false);
         

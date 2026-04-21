@@ -4,7 +4,6 @@
  */
 package javafxmlapplication;
 
-import com.sun.tools.javac.Main;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -193,13 +192,9 @@ public class RegisterUIController implements Initializable {
     @FXML
     private void DeleteAction(MouseEvent event) {
    
-    Image image = new Image(getClass().getResourceAsStream("..\\Resources\\OIP.png"));
+    Image image = new Image(getClass().getResourceAsStream("/Resources/OIP.png"));
     uploadimg.setImage(image);
     DeletePhoto.setVisible(false);
-    }
-
-    @FXML
-    private void volver(MouseEvent event) {
     }
 
     }

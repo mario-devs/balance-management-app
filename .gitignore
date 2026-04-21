@@ -12,6 +12,7 @@
 
 # Package Files #
 *.jar
+!src/lib/acountIPC.jar
 *.war
 *.nar
 *.ear
@@ -36,4 +37,4 @@ out/
 .DS_Store
 
 # Data files
-# data.db # Uncomment this if you don't want to track your local database changes.
+data.db

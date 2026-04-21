@@ -60,7 +60,7 @@
                <font>
                   <Font name="System Italic" size="16.0" />
                </font></Button>
-            <Hyperlink focusTraversable="false" layoutX="365.0" layoutY="207.0" onMouseClicked="#registerclick" text="here" />
+            <Hyperlink focusTraversable="false" layoutX="365.0" layoutY="207.0" onAction="#registerclick" text="here" />
             <Text layoutX="191.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account? Register" />
             <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="80.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
                <image>

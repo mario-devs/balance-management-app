@@ -20,6 +20,7 @@ public class JavaFXMLApplication extends Application {
     
     @Override
     public void start(Stage stage) throws Exception, IOException {
+        JavaFXMLApplication.stage = stage;
         //======================================================================
         
         // 1- creación del grafo de escena a partir del fichero FXML

@@ -65,7 +65,6 @@ public class Add_CategoryController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
         FieldD.sceneProperty().addListener((observable, oldScene, newScene) -> {
             if (newScene != null) {
                 Stage currentStage = (Stage) newScene.getWindow();
@@ -113,14 +112,14 @@ public class Add_CategoryController implements Initializable {
         account.getLoggedUser();
         account.registerCategory(nombre,description);
         
-        
-       
         Alert alerta = new Alert(AlertType.WARNING);
         alerta.setTitle("Add Category");
         alerta.setContentText("Do you confirm adding the category " + nombre + "?");
         alerta.setHeaderText("Warning");
         alerta.showAndWait();
-        initialize(null, null);
+        
+        actualizarTablaCat();
+        updateButtonState();
         }else{ 
         Alert alerta = new Alert(AlertType.ERROR);
         alerta.setTitle("Error in the data field");

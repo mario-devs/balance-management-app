@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -96,30 +97,12 @@ public class GraphicsController implements Initializable {
     }
 
     @FXML
-    private void goBack(MouseEvent event) {
-        try {
-            Stage stageActual = (Stage) ((Node)event.getSource()).getScene().getWindow();
-            stageActual.close();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Cuenta_Gastos.fxml"));
-            Parent root = loader.load();
-
-            
-            Node sourceNode = (Node) event.getSource();
-            // Obtenemos el Stage asociado al nodo raíz
-            Stage stage = (Stage) sourceNode.getScene().getWindow();
-
-            Scene scene = new Scene(root);
-
-           
-            stage.setScene(scene);
-        } catch (IOException e) {
-            e.printStackTrace();
-            
-            System.err.println("Error al cargar el recurso FXML.");
-        }
+    private void goBack(ActionEvent event) {
+        Stage stageActual = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        stageActual.close();
     }
     @FXML
-    private void generarReportePDF() {
+    private void generarReportePDF(ActionEvent event) {
         try {
             Map<String, Double> totalGastosPorMes = gastoMensual();
 
