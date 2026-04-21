@@ -15,6 +15,7 @@ Originally built as a NetBeans Ant-based project for Java 8, it has been fully a
 ## Preview
 
 The application features a modern, high-contrast interface designed for clarity and ease of use.
+
 ![UI Image](balanceui.png)
 
 ## Prerequisites
