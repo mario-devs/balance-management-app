@@ -1,6 +1,6 @@
 # Balance - Student Management App
 
-A sleek JavaFX desktop application designed to help students track their expenses and manage their budgets effectively. This project was originally developed in **2024** by **Essie** and **Saúl Alcázar**.
+A sleek JavaFX desktop application designed to help students track their expenses and manage their budgets effectively. This project was originally developed in **2024** by **Mario Pérez** and **Saúl Alcázar**.
 
 Originally built as a NetBeans Ant-based project for Java 8, it has been fully audited and migrated to a modern **Maven** build system, ensuring compatibility with JDK 11 and beyond.
 
@@ -15,6 +15,7 @@ Originally built as a NetBeans Ant-based project for Java 8, it has been fully a
 ## Preview
 
 The application features a modern, high-contrast interface designed for clarity and ease of use.
+![UI Image](balanceui.png)
 
 ## Prerequisites
 
@@ -47,4 +48,4 @@ To run this project, you need:
 - `pom.xml`: Maven configuration and dependency management.
 
 ---
-*Created by Essie & Saúl Alcázar (2024)*
+*Created by Mario Pérez & Saúl Alcázar (2024)*
